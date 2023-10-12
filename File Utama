@@ -1,0 +1,195 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package main;
+
+/**
+ *
+ * @author ASUS
+ */
+
+import JamTangan.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        final Scanner scanner = new Scanner(System.in);
+        final ArrayList<JamTangan> jamTanganList = new ArrayList<>();
+        final ArrayList<Pembeli> pembeliList = new ArrayList<>();
+
+        int choice;
+        do {
+            // Menampilkan menu pilihan kepada pengguna
+            System.out.println("Menu:");
+            System.out.println("1. Tambah Jam Tangan");
+            System.out.println("2. Edit Jam Tangan");
+            System.out.println("3. Hapus Jam Tangan");
+            System.out.println("4. Tampilkan Data Jam Tangan");
+            System.out.println("5. Tambah Pembeli");
+            System.out.println("6. Edit Pembeli");
+            System.out.println("7. Hapus Pembeli");
+            System.out.println("8. Tampilkan Data Pembeli");
+            System.out.println("9. Keluar");
+            System.out.print("Pilih: ");
+            choice = scanner.nextInt();
+            scanner.nextLine();  // consume the newline
+
+            switch (choice) {
+                case 1:
+                    // Meminta pengguna untuk memasukkan data jam tangan
+                    System.out.print("Masukkan Merek: ");
+                    String merek = scanner.nextLine();
+                    System.out.print("Masukkan Tipe: ");
+                    String tipe = scanner.nextLine();
+                    System.out.print("Masukkan Harga: ");
+                    double harga = scanner.nextDouble();
+                    scanner.nextLine();  // consume the newline
+                    // Membuat objek JamTangan dan menambahkannya ke dalam ArrayList jamTanganList
+                    JamTangan newJamTangan = new JamTangan(merek, tipe, harga);
+                    jamTanganList.add(newJamTangan);
+                    System.out.println("Jam Tangan berhasil ditambahkan.");
+                    break;
+
+                case 2:
+                    // Meminta pengguna untuk memasukkan merek jam tangan yang akan diubah
+                    System.out.print("Masukkan Merek Jam Tangan yang akan diubah: ");
+                    String merekToEdit = scanner.nextLine();
+                    boolean foundEdit = false;
+                    // Mengiterasi melalui daftar jam tangan untuk mencari merek yang cocok
+                    for (JamTangan jamTangan : jamTanganList) {
+                        if (jamTangan.getMerek().equals(merekToEdit)) {
+                            // Meminta pengguna untuk memasukkan data yang baru
+                            System.out.print("Masukkan Tipe baru: ");
+                            String newTipe = scanner.nextLine();
+                            System.out.print("Masukkan Harga baru: ");
+                            double newHarga = scanner.nextDouble();
+                            scanner.nextLine();  // consume the newline
+                            // Mengubah data jam tangan yang ada
+                            jamTangan.setTipe(newTipe);
+                            jamTangan.setHarga(newHarga);
+                            System.out.println("Jam Tangan berhasil diubah.");
+                            foundEdit = true;
+                            break;
+                        }
+                    }
+                    if (!foundEdit) {
+                        System.out.println("Jam Tangan tidak ditemukan.");
+                    }
+                    break;
+
+                case 3:
+                    // Meminta pengguna untuk memasukkan merek jam tangan yang akan dihapus
+                    System.out.print("Masukkan Merek Jam Tangan yang akan dihapus: ");
+                    String merekToDelete = scanner.nextLine();
+                    boolean foundDelete = false;
+                    // Mengiterasi melalui daftar jam tangan untuk mencari merek yang cocok
+                    for (JamTangan jamTangan : jamTanganList) {
+                        if (jamTangan.getMerek().equals(merekToDelete)) {
+                            // Menghapus jam tangan dari daftar
+                            jamTanganList.remove(jamTangan);
+                            System.out.println("Jam Tangan berhasil dihapus.");
+                            foundDelete = true;
+                            break;
+                        }
+                    }
+                    if (!foundDelete) {
+                        System.out.println("Jam Tangan tidak ditemukan.");
+                    }
+                    break;
+
+                case 4:
+                    // Memeriksa apakah daftar jam tangan kosong atau tidak, kemudian menampilkannya
+                    if (jamTanganList.isEmpty()) {
+                        System.out.println("Jam Tangan Kosong!");
+                    } else {
+                        for (JamTangan jamTangan : jamTanganList) {
+                            System.out.println(jamTangan);
+                        }
+                    }
+                    break;
+
+                case 5:
+                    // Meminta pengguna untuk memasukkan data pembeli
+                    System.out.print("Masukkan Nama Pembeli: ");
+                    String namaPembeli = scanner.nextLine();
+                    System.out.print("Masukkan Alamat Pembeli: ");
+                    String alamatPembeli = scanner.nextLine();
+                    System.out.print("Masukkan Nomor Telepon Pembeli: ");
+                    String nomorTeleponPembeli = scanner.nextLine();
+                    // Membuat objek Pembeli dan menambahkannya ke dalam ArrayList pembeliList
+                    Pembeli newPembeli = new Pembeli(namaPembeli, alamatPembeli, nomorTeleponPembeli);
+                    pembeliList.add(newPembeli);
+                    System.out.println("Pembeli berhasil ditambahkan.");
+                    break;
+
+                case 6:
+                    // Meminta pengguna untuk memasukkan nama pembeli yang akan diubah
+                    System.out.print("Masukkan Nama Pembeli yang akan diubah: ");
+                    String namaPembeliToEdit = scanner.nextLine();
+                    boolean foundEditPembeli = false;
+                    // Mengiterasi melalui daftar pembeli untuk mencari nama yang cocok
+                    for (Pembeli pembeli : pembeliList) {
+                        if (pembeli.getNama().equals(namaPembeliToEdit)) {
+                             // Meminta pengguna untuk memasukkan data yang baru
+                            System.out.print("Masukkan Alamat baru: ");
+                            String newAlamat = scanner.nextLine();
+                            System.out.print("Masukkan Nomor Telepon baru: ");
+                            String newNomorTelepon = scanner.nextLine();
+                            // Mengubah data pembeli yang ada
+                            pembeli.setAlamat(newAlamat);
+                            pembeli.setNomorTelepon(newNomorTelepon);
+                            System.out.println("Data Pembeli berhasil diubah.");
+                            foundEditPembeli = true;
+                            break;
+                        }
+                    }
+                    if (!foundEditPembeli) {
+                        System.out.println("Pembeli tidak ditemukan.");
+                    }
+                    break;
+
+                case 7:
+                    // Meminta pengguna untuk memasukkan nama pembeli yang akan dihapus
+                    System.out.print("Masukkan Nama Pembeli yang akan dihapus: ");
+                    String namaPembeliToDelete = scanner.nextLine();
+                    boolean foundDeletePembeli = false;
+                    // Mengiterasi melalui daftar pembeli untuk mencari nama yang cocok
+                    for (Pembeli pembeli : pembeliList) {
+                        if (pembeli.getNama().equals(namaPembeliToDelete)) {
+                            // Menghapus pembeli dari daftar
+                            pembeliList.remove(pembeli);
+                            System.out.println("Pembeli berhasil dihapus.");
+                            foundDeletePembeli = true;
+                            break;
+                        }
+                    }
+                    if (!foundDeletePembeli) {
+                        System.out.println("Pembeli tidak ditemukan.");
+                    }
+                    break;
+
+                case 8:
+                    // Memeriksa apakah daftar pembeli kosong atau tidak, kemudian menampilkannya
+                    if (pembeliList.isEmpty()) {
+                        System.out.println("Daftar Pembeli Kosong");
+                    } else {
+                        for (Pembeli pembeli : pembeliList) {
+                            System.out.println(pembeli);
+                        }
+                    }
+                    break;
+
+                case 9:
+                    // Pesan keluar dari program
+                    System.out.println("Terima kasih sudah memakai.");
+                    break;
+
+                default:
+                    // Jika pengguna memasukkan pilihan yang tidak valid
+                    System.out.println("Pilihan tidak valid. Silakan pilih lagi.");
+            }
+        } while (choice != 9);
+    }
+}
