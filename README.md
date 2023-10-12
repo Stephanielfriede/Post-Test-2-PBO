@@ -5,7 +5,7 @@
 ### Stephanie Elfriede Ginting (2209116037)
 
 ## A. SS CODINGAN 
-# Class Utama (main)
+### Class Utama (main)
 ![Screenshot (969)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/fd3a2a1e-988f-4684-934a-70faa37c9faa)
 ![Screenshot (970)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/0c67629b-212c-45b4-bc50-7ea19b1ab642)
 ![Screenshot (971)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/3ed68154-d5b3-4ddd-83af-a23e49054b75)
@@ -14,6 +14,14 @@
 ![Screenshot (974)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/b32928f3-1438-475e-b153-03c11cb0ec3c)
 ![Screenshot (975)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/a934bfc9-a95a-4830-9382-3fe6405b9aef)
 ![Screenshot (976)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/6facbc27-e161-4b67-88c4-dd92e71e711b)
+
+### Class JamTangan
+![Screenshot (990)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/af579b83-6a8a-4e98-a3af-252034844986)
+![Screenshot (991)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/f314d967-e20b-4332-8bda-bfa00f4c3612)
+
+### Class Pembeli
+![Screenshot (992)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/f4a710df-29a5-4b27-ac8f-ffbe2a1f3482)
+![Screenshot (993)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/996c229e-7b32-4b30-875c-10ed2221e15f)
 
 ## B. SS OUTPUT
 ### MENU
