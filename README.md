@@ -26,7 +26,8 @@
 ## B. SS OUTPUT
 ### MENU
 ![Screenshot (978)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/5f1fa54a-4958-4f94-aca7-5af5d980b733)
-
+   - Pengguna diminta untuk memasukkan angka pilihan dari 9 menu yang ada.
+#     
 ### Tambah Jam Tangan
 ![Screenshot (979)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/ca9b67a6-2a9f-4427-8f0c-2107df184293)
    - Pengguna diminta untuk memasukkan merek, tipe, dan harga jam tangan.
