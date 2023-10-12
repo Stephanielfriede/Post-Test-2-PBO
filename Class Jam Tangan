@@ -1,0 +1,60 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package JamTangan;
+
+/**
+ *
+ * @author ASUS
+ */
+
+public class JamTangan {
+    // Variabel anggota (Fields) untuk merek, tipe, dan harga
+    private String merek;
+    private String tipe;
+    private double harga;
+
+    // Konstruktor untuk inisialisasi objek JamTangan
+    public JamTangan(String merek, String tipe, double harga) {
+        this.merek = merek;
+        this.tipe = tipe;
+        this.harga = harga;
+    }
+
+    // Metode getter untuk merek
+    public String getMerek() {
+        return merek;
+    }
+
+    // Metode setter untuk merek
+    public void setMerek(String merek) {
+        this.merek = merek;
+    }
+
+    // Metode getter untuk tipe
+    public String getTipe() {
+        return tipe;
+    }
+
+    // Metode setter untuk tipe
+    public void setTipe(String tipe) {
+        this.tipe = tipe;
+    }
+
+    // Metode getter untuk harga
+    public double getHarga() {
+        return harga;
+    }
+
+    // Metode setter untuk harga
+    public void setHarga(double harga) {
+        this.harga = harga;
+    }
+
+    // Metode toString untuk mengembalikan representasi teks objek JamTangan
+    @Override
+    public String toString() {
+        return "Merek: " + merek + ", Tipe: " + tipe + ", Harga: " + harga;
+    }
+}
