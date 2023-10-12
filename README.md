@@ -1,12 +1,8 @@
 # PEMOGRAMAN BERORIENTASI OBJEK (TOKO JAM TANGAN)
 ## Sistem Informasi Kelas A 2022
 #
-#
 ## Disusun oleh:
 ### Stephanie Elfriede Ginting (2209116037)
-
-#
-#
 #
 ## A. SS CODINGAN 
 ![Screenshot (969)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/fd3a2a1e-988f-4684-934a-70faa37c9faa)
@@ -17,9 +13,6 @@
 ![Screenshot (974)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/b32928f3-1438-475e-b153-03c11cb0ec3c)
 ![Screenshot (975)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/a934bfc9-a95a-4830-9382-3fe6405b9aef)
 ![Screenshot (976)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/6facbc27-e161-4b67-88c4-dd92e71e711b)
-
-
-
 
 ## B. SS OUTPUT
 ### MENU
