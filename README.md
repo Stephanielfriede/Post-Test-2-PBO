@@ -1,6 +1,6 @@
 # PEMOGRAMAN BERORIENTASI OBJEK (TOKO JAM TANGAN)
 ## Sistem Informasi Kelas A 2022
-#
+
 ## Disusun oleh:
 ### Stephanie Elfriede Ginting (2209116037)
 #
