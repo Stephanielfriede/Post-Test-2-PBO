@@ -5,6 +5,7 @@
 ### Stephanie Elfriede Ginting (2209116037)
 #
 ## A. SS CODINGAN 
+#Class Utama (main)
 ![Screenshot (969)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/fd3a2a1e-988f-4684-934a-70faa37c9faa)
 ![Screenshot (970)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/0c67629b-212c-45b4-bc50-7ea19b1ab642)
 ![Screenshot (971)](https://github.com/Stephanielfriede/Post-Test-2-PBO/assets/126863743/3ed68154-d5b3-4ddd-83af-a23e49054b75)
