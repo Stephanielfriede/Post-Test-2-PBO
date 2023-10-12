@@ -1,0 +1,60 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package JamTangan;
+
+/**
+ *
+ * @author ASUS
+ */
+
+public class Pembeli {
+    // Variabel anggota (Fields) untuk nama, alamat, dan nomor telepon
+    private String nama;
+    private String alamat;
+    private String nomorTelepon;
+
+    // Konstruktor untuk inisialisasi objek Pembeli
+    public Pembeli(String nama, String alamat, String nomorTelepon) {
+        this.nama = nama;
+        this.alamat = alamat;
+        this.nomorTelepon = nomorTelepon;
+    }
+
+    // Metode getter untuk nama
+    public String getNama() {
+        return nama;
+    }
+
+    // Metode setter untuk nama
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    // Metode getter untuk alamat
+    public String getAlamat() {
+        return alamat;
+    }
+
+    // Metode setter untuk alamat
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    // Metode getter untuk nomorTelepon
+    public String getNomorTelepon() {
+        return nomorTelepon;
+    }
+
+    // Metode setter untuk nomorTelepon
+    public void setNomorTelepon(String nomorTelepon) {
+        this.nomorTelepon = nomorTelepon;
+    }
+
+    // Metode toString untuk mengembalikan representasi teks objek Pembeli
+    @Override
+    public String toString() {
+        return "Nama: " + nama + ", Alamat: " + alamat + ", Nomor Telepon: " + nomorTelepon;
+    }
+}
